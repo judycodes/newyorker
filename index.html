@@ -1,0 +1,124 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="css/style.css" type="text/css" /> 
+    
+        <title>Are you a true New Yorker?</title>
+        
+        <!--Google fonts-->
+ <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Baskerville" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+    <main>
+        <header>
+        <h1 id="title">You Call Yourself A New Yorker?</h1>
+        <p id="description">NYC, one of the most densely populated cities, has plenty of talented individuals.<br/> Can you really be considered one of us?</p>
+        </header>
+        
+        <form id="survey-form" action="#" method="get">
+            <div class="qa">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="What do you call yourself?" required />
+            </div>
+            
+            <div class="qa">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" placeholder="You@emailaddress.com" required />
+            </div>
+            
+            <div class="qa">
+            <label for="age">Age: </label>
+            <input type="number" id="number" name="age" placeholder="Age?" min="1" max="100" required />
+            </div>
+                
+            <div class="qa">    
+            <label for="newyorker">What kind of New Yorker are you? </label>
+            <select id="dropdown" name="rank" class="dropdown" style="font-family:Crimson Text;">
+              <option disabled value>Select one</option>
+              <option value="tourist">Tourist</option>
+              <option value="transplant">Transplant</option>
+              <option value="native">Native</option>
+              <option value="expatriate">Expatriate</option>
+            </select>
+            </div>
+                
+            <div class="qa">    
+            <label for="transportation">Preferred mode of transportation? </label>
+            <select id="trans-drop" name="transportation" class="dropdown" style="font-family:Crimson Text;">
+              <option disabled value>Select one</option>
+              <option style="font-family:Crimson Text" value="walk">Walk</option>
+              <option value="vehicle">Taxi/Uber/Lyft</option>
+              <option value="mta">Train/Bus</option>
+            </select>
+            </div>
+            
+            <div class="qa">
+            <label for="pizza-eating">Pizza-eating technique?</label>
+            <ul id="pizza" style="list-style: none;">
+                <li class="radio"><label><input name="radio" value="1"  type="radio"> Folded lengthwise</label></li>
+                <li class="radio"><label><input name="radio" value="2"  type="radio"> Knife & fork</label></li>
+                <li class="radio"><label><input name="radio" value="3"  type="radio"> From the plate</label></li>
+            </ul>
+            </div>
+            
+            <div class="qa">
+            <label for="crossing">Crossing the street?</label>
+            <ul id="cross" style="list-style: none;">
+                <li class="radio"><label><input name="radio" value="1"  type="radio"> With the light</label></li>
+                <li class="radio"><label><input name="radio" value="2"  type="radio"> Just jaywalk</label></li>
+            </ul>
+            </div>
+            
+            <div class="qa">
+            <label for="closet">What colors are your closet?<br>(Check all that apply): </label>
+            <ul id="colors" style="list-style: none;">
+              <li class="checkbox"><label><input name="color" value="1" type="checkbox">Red</label></li>
+              <li class="checkbox"><label><input name="color" value="2" type="checkbox">Orange</label></li>
+              <li class="checkbox"><label><input name="color" value="3" type="checkbox">Yellow</label></li>
+              <li class="checkbox"><label><input name="color" value="4" type="checkbox">Green</label></li>
+              <li class="checkbox"><label><input name="color" value="5" type="checkbox">Blue</label></li>
+              <li class="checkbox"><label><input name="color" value="6" type="checkbox">Purple</label></li>
+              <li class="checkbox"><label><input name="color" value="7" type="checkbox">Black</label></li>
+              <li class="checkbox"><label><input name="color" value="8" type="checkbox">White</label></li>
+              <li class="checkbox"><label><input name="color" value="9" type="checkbox">Gray</label></li>
+            </ul>
+            </div>
+            
+            <div class="qa">
+            <label for="landmarks">Where have you been to?<br>(Check all that apply): </label>
+            <ul id="places" style="list-style: none;">
+              <li class="checkbox"><label><input name="place" value="1" type="checkbox">The Boroughs</label></li>
+              <li class="checkbox"><label><input name="place" value="2" type="checkbox">MTA</label></li>
+              <li class="checkbox"><label><input name="place" value="3" type="checkbox">Rockefeller Center</label></li>
+              <li class="checkbox"><label><input name="place" value="4" type="checkbox">Chrysler Building</label></li>
+              <li class="checkbox"><label><input name="place" value="5" type="checkbox">Times Square</label></li>
+              <li class="checkbox"><label><input name="place" value="6" type="checkbox">Empire State</label></li>
+              <li class="checkbox"><label><input name="place" value="7" type="checkbox">GCT</label></li>
+              <li class="checkbox"><label><input name="place" value="8" type="checkbox">Port Authority</label></li>
+              <li class="checkbox"><label><input name="place" value="9" type="checkbox">The High Line</label></li>
+              <li class="checkbox"><label><input name="place" value="10" type="checkbox">Brooklyn Bridge</label></li>
+              <li class="checkbox"><label><input name="place" value="10" type="checkbox">Manhattan Bridge</label></li>
+            </ul>
+            </div>
+    
+    <div class="qa">
+    <label for="words">Any last words?</label>
+      <textarea id="claim" name="claim" placeholder="What else do you have to say?"></textarea>
+      </div> 
+      
+          <div class="button">
+            <input id="submit" type="submit" value="Submit Your Progress" class="btn">
+        </div>
+        
+        </form>
+    </main>
+        <!---tests if project fulfills requirements for FCC---> 
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
