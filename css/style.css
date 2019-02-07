@@ -14,8 +14,6 @@ html, body {
   
 }
 
-@media only screen and (min-device-width : 300px) and (max-device-width: 959px) {
-       /* styles for mobile browsers smaller than 480px; (iPhone) */
 main {    
   display:flex;
   flex-direction:column;
@@ -113,11 +111,7 @@ ul {
 li {
       box-sizing: border-box;
 }
-
-}
-
-
-   
+  
 @media only screen and (min-width: 960px) {
         /* styles for browsers larger than 960px; */
 main {    
